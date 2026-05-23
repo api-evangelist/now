@@ -1,0 +1,289 @@
+aid: now
+url: https://raw.githubusercontent.com/api-evangelist/now/refs/heads/main/apis.yml
+name: DNOW
+type: Index
+kind: company
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Energy
+  - Industrial Distribution
+  - Pipe Valves And Fittings
+  - PVF
+  - Supply Chain
+  - Procurement
+  - eCommerce
+  - cXML
+  - OCI
+  - Punchout
+  - IoT
+  - Inventory Management
+  - Mobile Apps
+  - Engineered Equipment
+description: >-
+  DNOW Inc. (NYSE: DNOW), formerly NOW Inc. and operating as DistributionNOW, is a
+  Houston-headquartered Fortune 1000 distributor of pipe, valves, fittings (PVF),
+  pumps and packaged, engineered process and production equipment serving the upstream,
+  midstream, downstream energy, and industrial sectors. Spun off from National
+  Oilwell Varco in 2014 and built on a heritage that spans more than 160 years, DNOW
+  combines a global network of distribution branches and engineering facilities with
+  the DigitalNOW platform — shop.dnow.com B2B eCommerce, cXML/OCI ERP punchout
+  integrations, the eSpec product configurator, the AccessNOW automated inventory
+  control system, and a library of customer-facing mobile applications. DNOW does
+  not publish a public developer portal, OpenAPI specifications, or a self-serve
+  API program; customer integrations are delivered through configured cXML/OCI
+  punchout sessions tied to enterprise ERP systems. In June 2025 DNOW announced a
+  definitive merger agreement to acquire MRC Global in an all-stock transaction
+  valued at approximately $1.5 billion.
+created: '2026-05-23'
+modified: '2026-05-23'
+specificationVersion: '0.19'
+apis:
+  - aid: now:digitalnow-ecommerce
+    name: DigitalNOW B2B eCommerce (shop.dnow.com)
+    tags:
+      - eCommerce
+      - B2B
+      - Procurement
+      - Catalog
+      - Real-Time Pricing
+      - Order Management
+    humanURL: https://www.dnow.com/ecommerce
+    properties:
+      - url: https://www.dnow.com/ecommerce
+        type: Documentation
+      - url: https://shop.dnow.com/
+        type: Portal
+      - url: https://www.dnow.com/digital-solutions
+        type: Overview
+    description: >-
+      DigitalNOW B2B eCommerce platform delivered through shop.dnow.com providing
+      contract-priced electronic catalogs of more than 160,000 SKUs, real-time
+      inventory visibility, online ordering, custom approval workflows, order
+      status and history, invoicing, and shipment notifications for energy and
+      industrial customers. Mobile activity syncs with the website so carts,
+      favorites, and order status are available across channels. There is no
+      publicly documented REST API for this surface; programmatic integration is
+      delivered through the cXML/OCI punchout capability documented separately.
+
+  - aid: now:digitalnow-erp-punchout
+    name: DigitalNOW ERP Punchout (cXML / OCI)
+    tags:
+      - Punchout
+      - Roundtrip
+      - cXML
+      - OCI
+      - ERP Integration
+      - Procurement
+      - SAP
+      - Oracle
+      - Ariba
+      - Coupa
+    humanURL: https://www.dnow.com/ecommerce
+    properties:
+      - url: https://www.dnow.com/ecommerce
+        type: Documentation
+      - url: https://www.dnow.com/digital-solutions
+        type: Overview
+    description: >-
+      Punchout / roundtrip integration that connects a customer's ERP or
+      third-party procurement system to shop.dnow.com using cXML or OCI. DNOW
+      configures the connection so buyers can browse the DNOW catalog from inside
+      their ERP, return the cart to the ERP for automated purchase-order creation
+      and approval, and receive invoices and shipment notifications back to the
+      ERP. This is a configured B2B integration delivered per customer rather than
+      a self-serve API; there is no public developer portal or OpenAPI surface.
+
+  - aid: now:espec-configurator
+    name: eSpec Product Configurator
+    tags:
+      - Product Configurator
+      - Engineered Equipment
+      - Pumps
+      - Packages
+      - Quoting
+      - 3D Drawing
+      - Technical Proposal
+    humanURL: https://www.dnow.com/digital-solutions
+    properties:
+      - url: https://www.dnow.com/digital-solutions
+        type: Documentation
+    description: >-
+      eSpec is DNOW's online product configurator for engineered equipment
+      packages. Users select design options and material specifications and the
+      tool generates a 3D drawing and a priced, complete technical proposal that
+      can be submitted as an order. It is presented as a web-based configurator
+      rather than a public API; quotes and orders are returned through the
+      shop.dnow.com / DigitalNOW workflow.
+
+  - aid: now:accessnow-inventory
+    name: AccessNOW Automated Inventory Control
+    tags:
+      - Inventory Management
+      - IoT
+      - RFID
+      - Barcode
+      - Facial Recognition
+      - Vending
+      - Tool Crib
+      - Real-Time Monitoring
+    humanURL: https://www.dnow.com/digital-solutions
+    properties:
+      - url: https://www.dnow.com/digital-solutions
+        type: Documentation
+    description: >-
+      AccessNOW is DNOW's automated inventory control solution for customer tool
+      cribs and stockrooms. It provides 24/7 controlled access to materials via
+      badge reader, keypad, or facial recognition; barcode and RFID check-in and
+      check-out; real-time inventory monitoring; and cloud-based transaction data
+      that feeds DigitalNOW analytics and replenishment. Data is consumed through
+      DNOW-hosted dashboards and reports; no public API surface is documented.
+
+  - aid: now:dnow-mobile-app-library
+    name: DNOW Mobile App Library
+    tags:
+      - Mobile Apps
+      - iOS
+      - Android
+      - eCommerce
+      - Reference Library
+      - Branch Locator
+    humanURL: https://www.dnow.com/digital-solutions
+    properties:
+      - url: https://www.dnow.com/digital-solutions
+        type: Documentation
+    description: >-
+      A library of customer-facing mobile applications under the DigitalNOW
+      umbrella, including a B2B eCommerce companion app whose activity syncs with
+      shop.dnow.com (cart, order status, history, favorites), industry reference
+      tools, and a facility / branch locator. The mobile apps are distributed
+      through public app stores; DNOW does not publish a public mobile SDK or
+      developer API for these apps.
+
+common:
+  - type: Website
+    url: https://www.dnow.com
+  - type: Portal
+    url: https://shop.dnow.com/
+  - type: Overview
+    url: https://www.dnow.com/digital-solutions
+  - type: Company
+    url: https://www.dnow.com/company
+  - type: InvestorRelations
+    url: https://ir.dnow.com/
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/dnowinc
+  - type: StockTicker
+    url: https://www.nyse.com/quote/XNYS:DNOW
+  - type: Features
+    data:
+      - name: Energy and Industrial Distribution
+        description: >-
+          Distributor of pipe, valves, fittings (PVF), pumps and packaged,
+          engineered process and production equipment to upstream, midstream,
+          downstream energy, and industrial customers worldwide.
+      - name: DigitalNOW Platform
+        description: >-
+          Umbrella platform spanning shop.dnow.com B2B eCommerce, cXML/OCI ERP
+          punchout, the eSpec configurator, AccessNOW automated inventory control,
+          and a library of customer mobile applications, marketed as using AI,
+          machine learning, mobile, and IoT.
+      - name: shop.dnow.com Catalog Scale
+        description: >-
+          Online eCatalog covering more than 160,000 SKUs with real-time,
+          account-specific contract pricing, approvals, and invoicing; broader
+          inventory referenced as 300,000 stocked SKUs across the company.
+      - name: ERP Punchout Integration
+        description: >-
+          Customer ERP and third-party procurement systems integrate to
+          shop.dnow.com via cXML or OCI punchout / roundtrip with automated PO
+          creation, approval, invoice generation, and shipment notifications.
+      - name: AccessNOW IoT Inventory
+        description: >-
+          24/7 secured tool-crib and stockroom access via badge, keypad, or
+          facial recognition with barcode/RFID check-in and check-out and
+          cloud-based transaction data.
+      - name: Engineering, Design and Fabrication
+        description: >-
+          In-house engineering, design, and fabrication of pump packages,
+          measurement skids, and other engineered process and production
+          equipment for energy and industrial customers.
+      - name: Pending MRC Global Merger
+        description: >-
+          DNOW and MRC Global announced a definitive all-stock merger agreement
+          on June 26, 2025 valued at approximately $1.5 billion, which will
+          materially expand DNOW's PVF distribution footprint.
+  - type: UseCases
+    data:
+      - name: Upstream Oil and Gas Procurement
+        description: >-
+          Drilling, completions, artificial lift, and production operators source
+          PVF, valves, pumps, and instrumentation through DNOW branches and the
+          DigitalNOW eCommerce platform.
+      - name: Midstream and Downstream Supply
+        description: >-
+          Pipelines, gas processing plants, refineries, and chemical plants source
+          pipe, valves, fittings, electrical, and instrumentation supplies.
+      - name: Industrial MRO and Facilities
+        description: >-
+          Industrial and manufacturing customers procure tools, safety / PPE,
+          paint and coatings, electrical, and facilities supplies through DNOW
+          branches and shop.dnow.com.
+      - name: ERP-Driven Procurement
+        description: >-
+          Enterprise buyers using SAP, Oracle, Ariba, Coupa, or similar
+          procurement systems punch out to shop.dnow.com via cXML / OCI and round
+          carts back into their ERP for PO automation.
+      - name: Engineered Equipment Packaging
+        description: >-
+          Operators specify and order pump packages, measurement and production
+          skids, and other engineered equipment using the eSpec configurator and
+          DNOW engineering services.
+      - name: Vendor-Managed Tool Cribs
+        description: >-
+          Site operators deploy AccessNOW units to control 24/7 access to
+          consumables, tools, and safety equipment with cloud-based transaction
+          visibility.
+  - type: Integrations
+    data:
+      - name: Customer ERP Systems (cXML / OCI)
+        description: >-
+          shop.dnow.com integrates to customer ERP and procurement platforms
+          (e.g. SAP, Oracle, Ariba, Coupa, SciQuest-class systems) via cXML or
+          OCI punchout / roundtrip configured per customer.
+      - name: AccessNOW Devices
+        description: >-
+          Badge readers, keypads, facial-recognition units, barcode scanners,
+          and RFID readers feed inventory transactions into DNOW's cloud-based
+          inventory and replenishment systems.
+      - name: DNOW Mobile Apps
+        description: >-
+          Customer-facing iOS and Android apps synchronize cart, order, and
+          history data with the shop.dnow.com eCommerce account.
+      - name: MRC Global (Pending Merger)
+        description: >-
+          Pending all-stock merger announced June 26, 2025; once closed,
+          MRC Global's PVF distribution and digital surfaces are expected to be
+          combined with DNOW's DigitalNOW platform.
+  - type: Absences
+    data:
+      - name: No Public Developer Portal
+        description: >-
+          DNOW does not publish a developer.dnow.com style developer portal,
+          public REST API reference, OpenAPI specifications, SDKs, CLI, webhooks,
+          or sandbox environment.
+      - name: No Public GitHub Organization
+        description: >-
+          There is no public github.com/dnow or github.com/distributionnow
+          organization hosting DNOW SDKs, sample code, or API clients.
+      - name: No Public Pricing Or Plans
+        description: >-
+          Commercial pricing is governed by customer-specific contracts negotiated
+          through DNOW account teams; no public pricing tiers or rate-limited
+          API plans are documented.
+      - name: No Public Status Page
+        description: >-
+          No public status.dnow.com / status.shop.dnow.com uptime or incident
+          page is published for shop.dnow.com or DigitalNOW services.
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

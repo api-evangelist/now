@@ -160,6 +160,8 @@ apis:
       developer API for these apps.
 
 common:
+  - type: DomainSecurity
+    url: security/now-domain-security.yml
   - type: Website
     url: https://www.dnow.com
   - type: Portal

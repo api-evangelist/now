@@ -3,7 +3,18 @@ url: https://raw.githubusercontent.com/api-evangelist/now/refs/heads/main/apis.y
 name: DNOW
 type: Index
 kind: company
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/now.png
 tags:
   - Energy
   - Industrial Distribution
@@ -35,36 +46,9 @@ description: >-
   definitive merger agreement to acquire MRC Global in an all-stock transaction
   valued at approximately $1.5 billion.
 created: '2026-05-23'
-modified: '2026-05-23'
+modified: '2026-07-25'
 specificationVersion: '0.19'
 apis:
-  - aid: now:digitalnow-ecommerce
-    name: DigitalNOW B2B eCommerce (shop.dnow.com)
-    tags:
-      - eCommerce
-      - B2B
-      - Procurement
-      - Catalog
-      - Real-Time Pricing
-      - Order Management
-    humanURL: https://www.dnow.com/ecommerce
-    properties:
-      - url: https://www.dnow.com/ecommerce
-        type: Documentation
-      - url: https://shop.dnow.com/
-        type: Portal
-      - url: https://www.dnow.com/digital-solutions
-        type: Overview
-    description: >-
-      DigitalNOW B2B eCommerce platform delivered through shop.dnow.com providing
-      contract-priced electronic catalogs of more than 160,000 SKUs, real-time
-      inventory visibility, online ordering, custom approval workflows, order
-      status and history, invoicing, and shipment notifications for energy and
-      industrial customers. Mobile activity syncs with the website so carts,
-      favorites, and order status are available across channels. There is no
-      publicly documented REST API for this surface; programmatic integration is
-      delivered through the cXML/OCI punchout capability documented separately.
-
   - aid: now:digitalnow-erp-punchout
     name: DigitalNOW ERP Punchout (cXML / OCI)
     tags:
@@ -92,72 +76,6 @@ apis:
       and approval, and receive invoices and shipment notifications back to the
       ERP. This is a configured B2B integration delivered per customer rather than
       a self-serve API; there is no public developer portal or OpenAPI surface.
-
-  - aid: now:espec-configurator
-    name: eSpec Product Configurator
-    tags:
-      - Product Configurator
-      - Engineered Equipment
-      - Pumps
-      - Packages
-      - Quoting
-      - 3D Drawing
-      - Technical Proposal
-    humanURL: https://www.dnow.com/digital-solutions
-    properties:
-      - url: https://www.dnow.com/digital-solutions
-        type: Documentation
-    description: >-
-      eSpec is DNOW's online product configurator for engineered equipment
-      packages. Users select design options and material specifications and the
-      tool generates a 3D drawing and a priced, complete technical proposal that
-      can be submitted as an order. It is presented as a web-based configurator
-      rather than a public API; quotes and orders are returned through the
-      shop.dnow.com / DigitalNOW workflow.
-
-  - aid: now:accessnow-inventory
-    name: AccessNOW Automated Inventory Control
-    tags:
-      - Inventory Management
-      - IoT
-      - RFID
-      - Barcode
-      - Facial Recognition
-      - Vending
-      - Tool Crib
-      - Real-Time Monitoring
-    humanURL: https://www.dnow.com/digital-solutions
-    properties:
-      - url: https://www.dnow.com/digital-solutions
-        type: Documentation
-    description: >-
-      AccessNOW is DNOW's automated inventory control solution for customer tool
-      cribs and stockrooms. It provides 24/7 controlled access to materials via
-      badge reader, keypad, or facial recognition; barcode and RFID check-in and
-      check-out; real-time inventory monitoring; and cloud-based transaction data
-      that feeds DigitalNOW analytics and replenishment. Data is consumed through
-      DNOW-hosted dashboards and reports; no public API surface is documented.
-
-  - aid: now:dnow-mobile-app-library
-    name: DNOW Mobile App Library
-    tags:
-      - Mobile Apps
-      - iOS
-      - Android
-      - eCommerce
-      - Reference Library
-      - Branch Locator
-    humanURL: https://www.dnow.com/digital-solutions
-    properties:
-      - url: https://www.dnow.com/digital-solutions
-        type: Documentation
-    description: >-
-      A library of customer-facing mobile applications under the DigitalNOW
-      umbrella, including a B2B eCommerce companion app whose activity syncs with
-      shop.dnow.com (cart, order status, history, favorites), industry reference
-      tools, and a facility / branch locator. The mobile apps are distributed
-      through public app stores; DNOW does not publish a public mobile SDK or
-      developer API for these apps.
 
 common:
   - type: DomainSecurity
@@ -286,6 +204,8 @@ common:
         description: >-
           No public status.dnow.com / status.shop.dnow.com uptime or incident
           page is published for shop.dnow.com or DigitalNOW services.
+  - type: ProductPage
+    url: https://www.dnow.com/ecommerce
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com

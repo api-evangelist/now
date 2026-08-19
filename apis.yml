@@ -47,7 +47,7 @@ description: >-
   valued at approximately $1.5 billion.
 created: '2026-05-23'
 modified: '2026-07-25'
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 apis:
   - aid: now:digitalnow-erp-punchout
     name: DigitalNOW ERP Punchout (cXML / OCI)

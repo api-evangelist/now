@@ -72,7 +72,7 @@ description: >-
   definitive merger agreement to acquire MRC Global in an all-stock transaction
   valued at approximately $1.5 billion.
 created: '2026-05-23'
-modified: '2026-07-25'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 apis:
   - aid: now:digitalnow-erp-punchout
@@ -104,6 +104,10 @@ apis:
       a self-serve API; there is no public developer portal or OpenAPI surface.
 
 common:
+  - url: https://www.dnow.com/news
+    type: Blog
+  - url: https://www.dnow.com/news/rss.xml
+    type: BlogRSS
   - type: DomainSecurity
     url: security/now-domain-security.yml
   - type: Website

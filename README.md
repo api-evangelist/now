@@ -1,4 +1,4 @@
-# DNOW (now)
+# DNOW
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,37 +64,84 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Profile for DNOW Inc. (formerly NOW Inc., operating as DistributionNOW) in the API Evangelist network. Fortune F1000 (rank 792). NYSE: DNOW.
+DNOW Inc. (NYSE: DNOW), formerly NOW Inc. and operating as DistributionNOW, is a Houston-headquartered Fortune 1000 distributor of pipe, valves, fittings (PVF), pumps and packaged, engineered process and production equipment serving the upstream, midstream, downstream energy, and industrial sectors. Spun off from National Oilwell Varco in 2014 and built on a heritage that spans more than 160 years, DNOW combines a global network of distribution branches and engineering facilities with the DigitalNOW platform — shop.dnow.com B2B eCommerce, cXML/OCI ERP punchout integrations, the eSpec product configurator, the AccessNOW automated inventory control system, and a library of customer-facing mobile applications. DNOW does not publish a public developer portal, OpenAPI specifications, or a self-serve API program; customer integrations are delivered through configured cXML/OCI punchout sessions tied to enterprise ERP systems. In June 2025 DNOW announced a definitive merger agreement to acquire MRC Global in an all-stock transaction valued at approximately $1.5 billion.
 
-DNOW is a Houston-headquartered global distributor of pipe, valves, fittings (PVF), pumps, and packaged, engineered process and production equipment serving the upstream, midstream, downstream energy, and industrial sectors. The company was spun off from National Oilwell Varco in 2014 and operates with a heritage that spans more than 160 years.
+**Areas:** Energy · Industrial Distribution · Pipe Valves And Fittings · PVF · Supply Chain · Procurement · E-Commerce · cXML · OCI · Punchout · IoT · Inventory
 
-## Product and Digital Lines
+## DNOW on APIs.io
 
-DNOW's customer-facing digital surface is delivered under the **DigitalNOW** umbrella:
+Everything profiled for DNOW is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/now/](https://apis.io/providers/now/)** — or go straight to one of the APIs or properties below.
 
-- **DigitalNOW B2B eCommerce** ([shop.dnow.com](https://shop.dnow.com/)) — Contract-priced eCatalog covering more than 160,000 SKUs, real-time inventory, online ordering, custom approval workflows, order status and history, invoicing, and shipment notifications.
-- **DigitalNOW ERP Punchout (cXML / OCI)** — Customer ERP and procurement systems (SAP, Oracle, Ariba, Coupa, SciQuest-class) punch out to shop.dnow.com using cXML or OCI, with automated PO creation, approvals, invoicing, and shipment notifications routed back into the ERP.
-- **eSpec Product Configurator** — Web-based configurator for engineered equipment packages that produces 3D drawings and priced technical proposals.
-- **AccessNOW Automated Inventory Control** — 24/7 secured tool-crib / stockroom access via badge, keypad, or facial recognition with barcode/RFID transactions and cloud-based monitoring.
-- **DNOW Mobile App Library** — Customer-facing iOS / Android apps that sync with shop.dnow.com for carts, order status, history, favorites, reference content, and branch locators.
+### APIs (1)
 
-Core distribution categories include PVF, pumps and packaged process equipment, drilling and completions, artificial lift, electrical, instrumentation and measurement, air compressors and blowers, paint and coatings, safety and PPE, tools, and industrial / facilities supplies. Services include supply chain and material management, engineering, design and fabrication, valve actuation and automation, and safety services.
+- [DigitalNOW ERP Punchout (cXML / OCI)](https://apis.io/apis/now/digitalnow-erp-punchout/) — Punchout / roundtrip integration that connects a customer's ERP or third-party procurement system to shop.dnow.com using cXML or OCI. DNOW configures the…
 
-## APIs
+### Published properties
 
-DNOW does **not** publish a public developer portal, OpenAPI specifications, SDKs, CLI, webhooks, sandbox environment, or rate-limited API plans. Programmatic customer integration is delivered through configured **cXML / OCI punchout / roundtrip** sessions tied to enterprise ERP and procurement systems, set up per customer by the DNOW account team. There is no public `github.com/dnow` or `github.com/distributionnow` organization hosting SDKs or API clients.
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-This profile therefore catalogs the DigitalNOW surfaces as digital integration capabilities rather than as public REST APIs, and intentionally does not contain `openapi/`, `capabilities/`, `rules/`, or other artifact folders, per the network's "no placeholder specs" rule.
+#### Security (1)
 
-## Notable 2025 Event
+Authentication, trust centre, and vulnerability disclosure.
 
-On **June 26, 2025**, DNOW and MRC Global jointly announced a definitive all-stock merger agreement valued at approximately **$1.5 billion**, under which DNOW will acquire MRC Global. Once the merger closes, MRC Global's PVF distribution footprint and digital surfaces are expected to be combined with DNOW's DigitalNOW platform; this profile may need to be re-run to incorporate the combined company.
+- [Now Domain Security](https://apis.io/security/now/now-domain-security/)
 
-## Files
+## Where to find this API
 
-- [`apis.yml`](apis.yml) — APIs.json index documenting DNOW's DigitalNOW surfaces, ERP integrations, IoT inventory, and notable absences.
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-## Timestamps
+- [Website](https://www.dnow.com)
+- [Blog](https://www.dnow.com/news)
 
-- **Created:** 2026-05-23
-- **Modified:** 2026-05-23
+## API Evangelist rating
+
+**Kin Score 8.7** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 21.4 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 4.9** — Energy & Utilities
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/now/](https://apis.io/providers/now/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for DNOW: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/now/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
